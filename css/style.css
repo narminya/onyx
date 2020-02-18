@@ -1,0 +1,157 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    width: 290px;
+    height: 100vh;
+    background-image: url(https://demo.mikado-themes.com/onyx50/wp-content/uploads/2015/03/left-menu-background.jpg);
+    position: fixed;
+}
+
+.logo{
+    padding: 20px 0 0 20px;
+    width: 20px;
+}
+
+.logo>img{
+    width: 200px;
+}
+.menu{
+    margin-top: 70px;
+
+}
+
+.menu a{
+    display: block;
+    color: rgb(238, 238, 238);
+    padding:  10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.menu a:hover{
+    color: rgb(233, 66, 44);}
+
+.fas { margin-right: 18px;
+}
+
+.menuopen a{
+    font-size: 12px;
+    margin-left: 31px;
+    
+}
+
+.menuopen>li>a::after {
+    content: "/f068";
+    font-family: 'Font awesome pro 5';
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content{
+    margin-left: 290px;
+}
+
+.product{
+    width:300px;
+    /* height: 200px; */
+    border: 0.5px solid #f3f3f3;
+    float:left;
+    box-sizing: border-box;
+    }
+    
+    .product img{
+        width: 100%;
+        
+    }
+    .product .img{
+        position: relative;
+    }
+    
+    .price{
+        color: orange;
+    }
+    
+    .product-info{
+        padding: 20px;
+    }
+    
+    .product-info>a{
+        color: black;
+        width: 50%;
+        display: inline-block;
+    
+        
+    }
+    .product-name{
+        box-sizing: border-box;
+    }
+    
+    .button{
+        padding: 10px 15px;
+    }
+    
+    .btn{
+        float: right;
+        background-color: gray;
+        box-sizing: border-box;
+        width: 99px;
+        padding: 12px 13px;
+        border-radius: 5px;
+    
+    }
+    
+    .btn:hover{
+        background-color: rgb(255, 105, 105);
+        color: white;
+    }
+    
+    
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        opacity: 0;
+        transition: all .4s;
+    }
+    
+    .product:hover .overlay{
+        opacity: 0.6;
+    }
+    .plus{
+        position: absolute;
+        top: 50%;
+        display: none;
+        left: 50%;
+        color:orange;    
+        font-size: 50px;
+        transform: translate(-50%,-50%);
+    }
+    
+    .product:hover .plus{
+        display: block;
+    
+    }
+    
+    .product-name{
+        padding-bottom: 20px;
+        font-family: 'montserrat';
+        font-weight: 400;
+        font-style: normal;
+    }
